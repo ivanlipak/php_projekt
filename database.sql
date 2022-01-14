@@ -321,6 +321,7 @@ CREATE TABLE `users` (
   `email` varchar(255) NOT NULL,
   `username` varchar(255) NOT NULL,
   `password` varchar(255) NOT NULL,
+  `role` int(11) NOT NULL DEFAULT 3,
   `country` char(2) NOT NULL,
   `date` timestamp NOT NULL DEFAULT current_timestamp() ON UPDATE current_timestamp(),
   `archive` enum('Y','N') NOT NULL DEFAULT 'Y'
